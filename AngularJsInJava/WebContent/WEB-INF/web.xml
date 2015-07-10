@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>javaAngularJS</servlet-name>
+    <servlet-class>com.controller.AngularJsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>javaAngularJS</servlet-name>
+    <url-pattern>/javaAngularJS</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>InsertAngularServlet</servlet-name>
+    <servlet-class>com.controller.InsertAngularServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertAngularServlet</servlet-name>
+    <url-pattern>/InsertOperationAngularJS</url-pattern>
+  </servlet-mapping>
+  <servlet>
+<servlet-name>DeleteAsset</servlet-name>
+<servlet-class>com.controller.DeleteAsset</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>DeleteAsset</servlet-name>
+<url-pattern>/DeleteAsset</url-pattern>
+</servlet-mapping>
+  <servlet>
+<servlet-name>UpdateAsset</servlet-name>
+<servlet-class>com.controller.UpdateAsset</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>UpdateAsset</servlet-name>
+<url-pattern>/UpdateAsset</url-pattern>
+</servlet-mapping>
+</web-app>
